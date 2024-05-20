@@ -1,0 +1,23 @@
+table{ 
+    border: 2px solid; 
+    }
+th{ 
+    border: 1px solid;
+    color: red;
+    background-color:yellow;
+    border-color: black;
+    font-size:30px;
+    height:40px;
+    width:400px;
+    }
+td{ 
+    border: 1px solid;
+    background-color: #09cefa;
+     }
+.center{
+    text-align:center;
+}
+button{
+    height:40px;
+    width:120px;
+}   

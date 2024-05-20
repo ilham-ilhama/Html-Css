@@ -1,0 +1,229 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>la forme</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mb-5">les formulaires</h1>
+
+        <!--basic form-->
+        <form>
+            <div class="mb-3">
+            <label for="email" class="form-label">Email :</label>
+            <input type="email" class="form-control"/>
+            </div>
+    
+       
+            <div class="mb-3">
+                <labeel for="password" class="form-label">password</labeel>
+                <input type="password" class="form-control">
+            </div>
+            <div class="mb-3">
+                <input type="checkbox" class="form-chkec-input" id="rem">
+                <label class="form-label">Remember Me</label>
+            </div>
+        </form>
+
+
+        <form>
+            <div class="row">
+                <div class="col-6">
+                    <label for="email" class="form-label">Email :</label>
+                    <input type="email" class="form-control"/>
+                </div>
+                
+        
+        
+                <div class="col-6">
+                    <labeel for="password" class="form-label">password</labeel>
+                    <input type="password" class="form-control">
+                </div>
+                
+                
+                <div class="mb-3">
+                    <input type="checkbox" class="form-chkec-input" id="rememberMe">
+                    <label class="form-label">Remember Me</label>
+                </div>
+            </div>
+        </form>
+
+        <br /><br />
+        <!--other fields-->
+
+        <!--select fields / form-select -->
+        <div class="mb-4">
+        <select class="form-select">
+            <option>selectionner les villes</option>
+            <option value="casa">casa</option>
+            <option value="rabat">rabat</option>
+            <option value="tanger">tanger</option>
+        </select>
+        </div>
+    
+        <select multiple class="form-select">
+            <option value="casablanca">casa</option>
+            <option value="rabat">rabat</option>
+            <option value="tanger">tanger</option>
+        </select>
+        <br><br>
+        <!-- switch -->
+        <div class="form-check form-switch">
+            <input type="checkbox" class="form-check-input">
+        </div>
+        <br><br>
+       <!--inline--> 
+       <div class="form-check form-check-inline">
+        <input type="checkbox" value="check1" id="check1" class="form-chkec-input">
+        <label class="form-label" for="check1">choix1</label>
+       </div>
+       <div class="form-check form-check-inline">
+        <input type="checkbox" value="check2" id="check2" class="form-chkec-input">
+        <label class="form-label" for="check2">choix2</label>
+       </div>
+       <div class="form-check form-check-inline">
+        <input type="checkbox" value="check3" id="check3" class="form-chkec-input">
+        <label class="form-label" for="check3">choix3</label>
+       </div>
+
+       <h1>Taille du controle de formulaire</h1>
+       <input type="text" class="form-control form-control-lg" placeholder="Grande en ">
+
+       <br><br>
+       
+       <form action="/action.php" class="was-validated">
+        <div class="mb-3 mt-3">
+            
+            <label for="email" class="form-label">Email :</label>
+            <input type="email" class="form-control" id="email" placeholder="saisir le email" name="email" required/>
+        
+            <div class="valid-feedback">valide.</div>
+            <div class="invalid-feedback">merci de remplir ce champ</div>
+        </div>
+     </form>
+
+     <br><br>
+     <div class="card">
+        <div class="card-header">Entete</div>
+        <div class="card-body">Teneur</div>
+        <div class="card-footer">Bas de page</div>
+     </div>
+
+     <br><br>
+     <div class="card bg-danger">
+        <div class="card-body">
+            <h4 class="card-title">Titre de la carte</h4>
+            <p class="card-text">Quelques exemples de texte. Quelques exemples de texe.</p>
+            <a href="#" class="card-link">lien carte</a>
+            <a href="#" class="card-link">Autre liens</a>
+        </div>   
+     </div>
+     </div>
+
+     <br><br>
+
+     <div class="card mb-4" style="width : 400px">
+        <img class="card-img-top" src="back-ground.jpg" alt="card image">
+        <div class="card-body text-bg-primary">
+            <h4 class="card-title">Sami LAMRINI</h4>
+            <p class="card-text">QUELQUES exemples DE TEXTES.</p>
+            <a href="#" class="btn btn-primary">Voir profil</a>
+        </div>
+    </div>
+   
+    <br><br>
+    <div class="card mb-4" style="width : 400px">
+        <img class="card-img-top" src="back-ground.jpg" alt="card image">
+        <div class="card-img-overlay">
+            <h4 class="card-title">Sami LAMRINI</h4>
+            <p class="card-text">QUELQUES exemples DE TEXTES.</p>
+            <a href="#" class="btn btn-primary">Voir profil</a>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="progress">
+       <div class="progress-bar bg-danger" style="width : 70%">70%</div> 
+    </div>
+
+    <br><br>
+    <div class="progress">
+        <div class="progress-bar progress-bar-striped" style="width : 50%">50%</div> 
+     </div>
+
+     <br><br>
+
+     <div class="progress">
+        <div class="progress-bar bg-dark progress-bar-striped progress-bar-animated" style="width : 30%">30%</div> 
+     </div>
+
+     <br><br>
+
+     <div class="alert alert-success">
+        <strong>Succes!</strong> Indique une action reussie ou positive.
+     </div>
+
+     <br><br>
+
+     <div class="alert alert-danger alert-dismissible">
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="closse"></button>
+        <strong>Danger!</strong> vou deviez.<a href="#" class="alter-link">lire ce message</a>
+    </div>
+
+    <br><br>
+    <ul class="pagination justify-content-center" style="margin : 20px 0">
+        <li class="page-item"><a class="page-link" href="#">Precedent</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item active"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Suivant</a></li>
+    </ul>
+
+    <br><br>
+    <ul class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">HTML</a></li>
+        <li class="breadcrumb-item"><a href="#">CSS</a></li>
+        <li class="breadcrumb-item"><a href="#">BOOTSTRAP</a></li>
+        <li class="breadcrumb-item active">Exemples</li>
+    </ul>
+
+    <br><br>
+
+    <nav class="navbar navbar-expand-sm bg-danger">
+        <div class="container-fluid">
+            <!--liens-->
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#">link 1</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">link 3</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">link 4</a></li>
+            </ul>
+        </div>
+    </nav>
+    <br><br>
+    <nav class="navbar bg-light">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#">link 1</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">link 1</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">link 1</a></li>
+        </ul>
+
+        <br><br>
+
+        <div class="btn-group">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu deroulant<span class="caret"></span></button>
+            <ul class="dropdown-menu">
+                <li><a href="#" title="lien 1">Lien 1</a></li>
+                <li><a href="#" title="lien 2">Lien 2</a></li>
+                <li><a href="#" title="lien 3">Lien 3</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#" title="lien 6">Lien 4</a></li>
+            </ul>
+        </div>
+    </nav>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+@keyframes star{
+    0%{
+        transform: translateX(100px);
+        height: 120px;
+    }
+    50%{
+        transform: translateX(200px) rotate(360deg);
+        : 50px;
+
+    }
+    100%{
+        transform: translateX(300px);
+        height: 120px;
+    }
+}
+.aa div{
+    background-color: red;
+    width: 100px;
+    margin: 15px;
+}
+.aa{
+    display: flex;
+}
+img{
+    height: 100px;
+    animation-name: star;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+
+
+}

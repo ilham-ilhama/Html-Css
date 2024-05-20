@@ -1,0 +1,47 @@
+/*div {
+    background-color: aqua;
+    display: inline-block;
+    height: 100px;
+    width: 500px;
+}
+span {
+    background-color: brown;
+    display: inline-block;
+    height: 100px;
+    width: 500px;}*/
+.box1{
+    position: relative;
+    left:200px;
+    background-color: aqua;
+    height:350px;
+    width:350px;
+
+
+}
+.box2{
+    position:absolute;
+    right:20px ;
+    background-color: bisque;
+    height:150px;
+    width:150px;
+    right: 20px;
+    top: 100px;
+}
+.box3{
+    position:fixed;
+    right:20px ;
+    background-color: bisque;
+    height:150px;
+    width:150px;
+    right: 20px;
+    top: 100px;
+}
+.box4{
+    position:sticky;
+    background-color: rgb(35, 207, 78);
+    height:100px;
+    width:800px;
+    top: 10px;
+    bottom: 10px;
+    z-index: 1;
+}
